@@ -1,0 +1,7 @@
+<h1>줄인 링크 리스트</h1>
+
+<% @links.each do |link| %>
+    <p><%=link.short%> => <%=link.long%> | <a href="/links/<%=link.id%>" data-method="delete">삭제하기</a></a></p>
+<%end%>
+
+<a href = "/links/new">새로 만들기</a> 
